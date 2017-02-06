@@ -1,11 +1,12 @@
 require 'rubygems'
-require 'vendor/rack/lib/rack'
-require 'sinatra/sinatra/lib/sinatra'
+require 'bundler'
+
+Bundler.require
   
 set :run, false
 set :environment, :production
 set :views, "views"
   
-require 'whooms.rb'
+require '/var/www/whooms/code/whooms.rb'
 run Sinatra::Application
 

@@ -1,5 +1,6 @@
 #whooms.rb
 require 'rubygems'
+require 'bundler/setup'
 require 'sinatra'
 require 'mapscript'
 
