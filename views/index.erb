@@ -1,0 +1,19 @@
+<html>
+<head>WhooMS - the tiny public geotiff wms server</head>
+<body>
+<h2>WhooMS - the tiny public geotiff wms server</h2>
+Files Uploaded So Far <%= @count %> <br /> <br />
+1.Get geotiff (epsg:4326)<br />
+2.Upload<br />
+3.Use<br />
+
+<form action="/upload" method="post" enctype="multipart/form-data" >
+<input type="file" name = "file" />
+<input type="submit" name="submit" value="Upload" />
+<br /><a href="/show">Forgotten link?</a> 
+<%= @msg %>
+<hr />
+<p>About: Made with Sinatra, Ruby, Mapserver Mapscript by Tim Waters tim@geothings.net <br />
+Code available at: <a href="http://github.com/timwaters/whooms">github</a></p>
+</body>
+</html>

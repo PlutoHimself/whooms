@@ -1,0 +1,14 @@
+<html>
+<head>WhooMS - the tiny public geotiff wms server</head>
+<body>
+<h2>WhooMS - the tiny public geotiff wms server</h2>
+Files Uploaded So Far <%= @count %> <br /> <br />
+<%= @msg %> <br />
+<a href="/wms?layer=<%=@map%>&request=GetMap&version=1.1.1&styles=&format=image/png&srs=epsg:4326&exceptions=application/vnd.ogc.se_inimage">
+This is your WMS link.</a> Make a note of it.<br />
+<a href="/show/<%=@map%>">Permalink to this page.</a>
+<hr />
+<p>About: Made with Sinatra, Ruby, Mapserver Mapscript by Tim Waters tim@geothings.net <br />
+Code available at: <a href="http://github.com/timwaters/whooms">github</a></p>
+</body>
+</html>
